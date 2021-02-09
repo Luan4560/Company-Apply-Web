@@ -40,19 +40,22 @@ export const Container = styled.div `
 export const Content = styled.div`
 @media(min-width: 400px) {
   width: 90vw;
-  background: #F9DC5C;
+  background: #fff;
   padding: 15px;
   margin-top: 20px;
   border-radius: 5px;
 
   h3 {
-    color: #fff;
+    color: #777;
     font-family: sans-serif;
+    font-weight: bold;
   }
 
   h4 {
-    color: #fff;
+    color: #777;
     font-family: sans-serif;
+    font-weight: bold;
+
   }
 }
 `
