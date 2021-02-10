@@ -45,6 +45,10 @@ export const Content = styled.div`
   margin-top: 20px;
   border-radius: 5px;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   h3 {
     color: #777;
     font-family: sans-serif;
@@ -55,7 +59,18 @@ export const Content = styled.div`
     color: #777;
     font-family: sans-serif;
     font-weight: bold;
-
   }
+
+  button {
+    padding: 10px;
+    border: 2px solid #ED254E;
+    border-radius: 5px;
+    background: #fff;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
 }
 `
