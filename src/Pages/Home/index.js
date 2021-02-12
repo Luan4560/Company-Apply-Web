@@ -13,12 +13,12 @@ const Home = () => {
 
   const onSubmit = async(data, e) => {
     e.target.reset()
-    
+
     try {
       setIsLoading(true)
-   
+
       const response = await api.post('companys', data )
-   
+
       setCompany([...company, response.data])
     }catch(error) {
       console.log(error)
@@ -54,20 +54,20 @@ const Home = () => {
   useEffect(() => {
     getCompany()
   }, [])
-  
+
 
   return (
   <>
     <Container>
       <h1>Company Apply</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input type="text" name="name" placeholder="Company Name" ref={register}/>
-        <input type="text" name="url" placeholder="Company Site" ref={register}/>
+        <input type="text" name="name" placeholder="Company" ref={register}/>
+        <input type="text" name="url" placeholder="Company " ref={register}/>
         <input type="text" name="country" placeholder="Country" ref={register}/>
         <input type="text" name="city" placeholder="City" ref={register}/>
         <input type="submit" value="Insert"/>
       </form>
-      
+
       {company.map(company => (
         <Content  key={company.url}>
           <div>
@@ -76,9 +76,9 @@ const Home = () => {
               Country: {company.country}<br/>
               City:{company.city}
             </p>
-          
+
             <h4>Visite a Empresa</h4>
-          </div> 
+          </div>
 
           <ContentButton>
             <button className="blue" type="button" onClick={() => handleDelete(company.id)}>
@@ -95,7 +95,7 @@ const Home = () => {
 
           </ContentButton>
         </Content>
-        ))} 
+        ))}
     </Container>
   </>
   )

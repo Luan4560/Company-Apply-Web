@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -11,6 +11,6 @@ const GlobalStyle = createGlobalStyle`
     background: #465362;
     font-family: "Poppins";
   }
-`
+`;
 
 export default GlobalStyle;
