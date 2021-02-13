@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import { useForm } from 'react-hook-form';
 import {Container, Content, ContentButton} from './styles'
 import {BsTrash, BsCheckCircle, BsStar} from 'react-icons/bs'
-import {IoCheckmark} from 'react-icons/io'
 import api from '../../services/api'
 
 const Home = () => {

@@ -45,6 +45,7 @@ export const Card = styled.div`
       font-weight: 700;
       color: #fff;
       width: 35vw;
+      margin: 10px 0;
     }
 
   h1 {
@@ -67,19 +68,7 @@ export const Card = styled.div`
       font-weight: 500;
       background-color: #eee;
     }
-    input:last-child  {
-      background: #ED254E;
-      color: #fff;
-      font-weight: 700;
-      font-family: "Poppins";
-      /* font-size: 18px; */
-      letter-spacing: 1px;
-      transition: 0.5s;
 
-    &:hover {
-      background: ${shade(0.15,'#ED254E' )};
-      cursor: pointer;
-    }
   }
 `
 
